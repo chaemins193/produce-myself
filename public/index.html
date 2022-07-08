@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>😊</title>
+    <style>
+      body {
+        background-color: rgb(232, 226, 254);
+        color: rgb(50, 1, 95);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      h2,
+      h3,
+      h5 {
+        margin: 15px 10px 15px 10px;
+      }
+      .dark {
+        float: right;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" class="dark" value="🌃" onclick="darkMode()" />
+    <h2>자기소개</h2>
+    <h3>이름 : 신채민</h3>
+    <div class="container">
+      <h5>1. 관심 직무 : 웹 백엔드 개발자</h5>
+      <h5>2. 관심 분야 : Java, Javascript</h5>
+    </div>
+    <div class="container">
+      <h5>
+        3. AI 트랙에서 기대되는 점 : 열정적인 동료들과 공부하고 프로젝트하는
+        경험
+      </h5>
+      <h5>
+        4. 동료 레이서에게 하고 싶은 말 : 열심히 해서 원하는 바를 이루어봐요!
+      </h5>
+    </div>
+    <div class="container">
+      <h5>5. 취미 : 독서, 게임, 아이쇼핑</h5>
+      <h5>6. 최근에 본 책 : 칵테일, 러브, 좀비</h5>
+    </div>
+    <div class="container">
+      <h5>7. 좋아하는 음료 : 아이스 아메리카노 🥤</h5>
+      <h5>8. 최근에 본 영화 : 닥터 스트레인지 2</h5>
+    </div>
+    <script>
+      function darkMode() {
+        if (document.querySelector("body").style.backgroundColor !== "black") {
+          document.querySelector("body").style.backgroundColor = "black";
+          document.querySelector("body").style.color = "white";
+        } else {
+          document.querySelector("body").style.backgroundColor =
+            "rgb(232, 226, 254)";
+          document.querySelector("body").style.color = "rgb(50, 1, 95)";
+        }
+      }
+    </script>
+  </body>
+</html>
